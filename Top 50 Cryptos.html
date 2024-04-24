@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bharat Stock Market</title>
+    <link rel="icon" type="image/x-icon" href="Bharat Stock Market.jpeg">
+    <!-- Font Awesome -->
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+></script>
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img
+              src="Bharat Stock Market.jpeg"
+              class="me-2"
+              height="80"
+              alt="Bharat Stock Market"
+              loading="lazy"
+            />
+          </a>
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarRightAlignExample"
+        aria-controls="navbarRightAlignExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+        <!-- Left links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="true">
+              Services
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="StockMarketTraining.html">Stock Market Training</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="CryptoTraining.html">Crypto Training</a>
+              </li>
+              
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false">
+              Investing
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="DematAccountOpening.html">Demat Account Opening</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="HowToBuyShares.html">How to buy Shares</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="InvestInUsStocks.html">Invest In US Stocks</a>
+              </li>
+              
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Recomondations.html">Recommendations</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="Portfolio Stocks.html">Long Term Stocks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="TopHolders.html">Top Holders</a>
+          </li>
+          <!-- Navbar dropdown -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="ContactUs.html">Contact Us</a>
+              </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+      <style>
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+          border: 1px solid #ddd;
+        }
+        
+        th, td {
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even){background-color: #f2f2f2}
+        </style>
+      <div style="overflow-x:auto;">
+        <table style="text-align: center;">
+          <tr style="font-weight: bold;">
+              <td>Ranking</td>
+              <td>Icon</td>
+              <td>Name</td>
+              <td>Symbol</td>
+              <td>Price</td>
+              <td>Circulating Supply</td>
+              <td>Total Supply</td>
+              <td>Market Cap($)</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td><img src="https://assets.coingecko.com/coins/images/1/standard/bitcoin.png?1696501400" alt="Bitcoin"></td>
+              <td>Bitcoin</td>
+              <td>BTC</td>
+              <td>$42,772.33</td>
+              <td>19,575,425</td>
+              <td>21 Million</td>
+              <td>$837,286,596,717</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td><img src="https://assets.coingecko.com/coins/images/279/standard/ethereum.png?1696501628" alt="Ethereum"></td>
+              <td>Ethereum</td>
+              <td>ETH</td>
+              <td>$2,213.20</td>
+              <td>120,190,475</td>
+              <td>120 Million</td>
+              <td>$265,862,777,944</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td><img src="https://assets.coingecko.com/coins/images/325/standard/Tether.png?1696501661" alt="Tether"></td>
+              <td>Tether</td>
+              <td>USDT</td>
+              <td>$0.999199</td>
+              <td>90,931,157,880</td>
+              <td>90.9 Billion</td>
+              <td>$90,940,335,334</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td><img src="https://assets.coingecko.com/coins/images/825/standard/bnb-icon2_2x.png?1696501970" alt="Binance Coin"></td>
+              <td>BNB</td>
+              <td>BNB</td>
+              <td>$256.49</td>
+              <td>153,856,150</td>
+              <td>154 Million</td>
+              <td>$39,423,516,191</td>
+          </tr>
+          <tr>
+              <td>5</td>
+              <td><img src="https://assets.coingecko.com/coins/images/4128/standard/solana.png?1696504756" alt="Solana"></td>
+              <td>Solana</td>
+              <td>SOL</td>
+              <td>$77.64</td>
+              <td>427,828,818</td>
+              <td>565 Million</td>
+              <td>$33,143,229,315</td>
+          </tr>
+          <tr>
+              <td>6</td>
+              <td><img src="https://assets.coingecko.com/coins/images/44/standard/xrp-symbol-white-128.png?1696501442" alt="XRP"></td>
+              <td>XRP</td>
+              <td>XRP</td>
+              <td>$0.612261</td>
+              <td>54,005,597,115</td>
+              <td>100 Billion</td>
+              <td>$33,058,736,174</td>
+          </tr>
+          <tr>
+              <td>7</td>
+              <td><img src="https://assets.coingecko.com/coins/images/6319/standard/usdc.png?1696506694" alt="USD Coin"></td>
+              <td>USDC</td>
+              <td>USDC</td>
+              <td>$1.00</td>
+              <td>24,762,271,167</td>
+              <td>24.8 Billion</td>
+              <td>$24,755,221,363</td>
+          </tr>
+          <tr>
+              <td>8</td>
+              <td><img src="https://assets.coingecko.com/coins/images/975/standard/cardano.png?1696502090" alt="Cardano"></td>
+              <td>Cardano</td>
+              <td>ADA</td>
+              <td>$0.589949</td>
+              <td>35,023,668,983</td>
+              <td>45 Billion</td>
+              <td>$20,671,417,034</td>
+          </tr>
+          <tr>
+              <td>9</td>
+              <td><img src="https://assets.coingecko.com/coins/images/13442/standard/steth_logo.png?1696513206" alt="Staked Ether"></td>
+              <td>Lido Staked Ether</td>
+              <td>STETH</td>
+              <td>$2,209.60</td>
+              <td>9,155,953</td>
+              <td>9.16 Million</td>
+              <td>$20,231,125,458</td>
+          </tr>
+          <tr>
+              <td>10</td>
+              <td><img src="https://assets.coingecko.com/coins/images/12559/standard/Avalanche_Circle_RedWhite_Trans.png?1696512369" alt="Avalanche"></td>
+              <td>Avalanche</td>
+              <td>AVAX</td>
+              <td>$42.23</td>
+              <td>365,677,065</td>
+              <td>434 Million</td>
+              <td>$15,446,341,649</td>
+          </tr>
+          <tr>
+              <td>11</td>
+              <td><img src="https://assets.coingecko.com/coins/images/5/standard/dogecoin.png?1696501409" alt="Dogecoin"></td>
+              <td>Dogecoin</td>
+              <td>DOGE</td>
+              <td>$0.090256</td>
+              <td>142,309,586,384</td>
+              <td>142 Billion</td>
+              <td>$12,846,098,450</td>
+          </tr>
+          <tr>
+              <td>12</td>
+              <td><img src="https://assets.coingecko.com/coins/images/12171/standard/polkadot.png?1696512008" alt="Polkadot"></td>
+              <td>Polkadot</td>
+              <td>DOT</td>
+              <td>$7.01</td>
+              <td>1,309,404,130</td>
+              <td>1.39 Billion</td>
+              <td>$9,179,003,240</td>
+          </tr>
+          <tr>
+              <td>13</td>
+              <td><img src="https://assets.coingecko.com/coins/images/1094/standard/tron-logo.png?1696502193" alt="TRON"></td>
+              <td>TRON</td>
+              <td>TRX</td>
+              <td>$0.102223</td>
+              <td>88,389,019,500</td>
+              <td>88.4 Billion</td>
+              <td>$9,026,799,345</td>
+          </tr>
+          <tr>
+              <td>14</td>
+              <td><img src="https://assets.coingecko.com/coins/images/877/standard/chainlink-new-logo.png?1696502009" alt="Chainlink"></td>
+              <td>Chainlink</td>
+              <td>LINK</td>
+              <td>$14.43</td>
+              <td>556,849,971</td>
+              <td>1 Billion</td>
+              <td>$8,034,132,489</td>
+          </tr>
+          <tr>
+              <td>15</td>
+              <td><img src="https://assets.coingecko.com/coins/images/17980/standard/ton_symbol.png?1696517498" alt="TON Crystal"></td>
+              <td>Toncoin</td>
+              <td>TON</td>
+              <td>$2.21</td>
+              <td>3,455,243,227</td>
+              <td>5.1 Billion</td>
+              <td>$7,643,011,181</td>
+          </tr>
+          <tr>
+              <td>16</td>
+              <td><img src="https://assets.coingecko.com/coins/images/4713/standard/polygon.png?1698233745" alt="Polygon"></td>
+              <td>Polygon</td>
+              <td>MATIC</td>
+              <td>$0.778932</td>
+              <td>9,282,943,566</td>
+              <td>10 Billion</td>
+              <td>$7,225,534,257</td>
+          </tr>
+          <tr>
+              <td>17</td>
+              <td><img src="https://assets.coingecko.com/coins/images/7598/standard/wrapped_bitcoin_wbtc.png?1696507857" alt="Wrapped Bitcoin"></td>
+              <td>Wrapped Bitcoin</td>
+              <td>WBTC</td>
+              <td>$42,790.92</td>
+              <td>154,068</td>
+              <td>154 Thousand</td>
+              <td>$6,590,099,920</td>
+          </tr>
+          <tr>
+              <td>18</td>
+              <td><img src="https://assets.coingecko.com/coins/images/11939/standard/shiba.png?1696511800" alt="Shiba Inu"></td>
+              <td>Shiba Inu</td>
+              <td>SHIB</td>
+              <td>$0.00001021</td>
+              <td>589,308,896,086,785</td>
+              <td>1 Quadrillion</td>
+              <td>$6,012,820,627</td>
+          </tr>
+          <tr>
+              <td>19</td>
+              <td><img src="https://assets.coingecko.com/coins/images/9956/standard/Badge_Dai.png?1696509996" alt="Dai"></td>
+              <td>Dai</td>
+              <td>DAI</td>
+              <td>$0.999039</td>
+              <td>5,291,358,627</td>
+              <td>5.29 Billion</td>
+              <td>$5,286,273,394</td>
+          </tr>
+          <tr>
+              <td>20</td>
+              <td><img src="https://assets.coingecko.com/coins/images/2/standard/litecoin.png?1696501400" alt="Litecoin"></td>
+              <td>Litecoin</td>
+              <td>LTC</td>
+              <td>$71.07</td>
+              <td>73,999,296</td>
+              <td>84 Million</td>
+              <td>$5,255,370,734</td>
+          </tr>
+          <tr>
+              <td>21</td>
+              <td><img src="https://assets.coingecko.com/coins/images/12504/standard/uni.jpg?1696512319" alt="Uniswap"></td>
+              <td>Uniswap</td>
+              <td>UNI</td>
+              <td>$5.99</td>
+              <td>753,766,667</td>
+              <td>1 Billion</td>
+              <td>$4,509,759,993</td>
+          </tr>
+          <tr>
+              <td>22</td>
+              <td><img src="https://assets.coingecko.com/coins/images/780/standard/bitcoin-cash-circle.png?1696501932" alt="Bitcoin Cash"></td>
+              <td>Bitcoin Cash</td>
+              <td>BCH</td>
+              <td>$229.09</td>
+              <td>19,590,050</td>
+              <td>21 Million</td>
+              <td>$4,487,102,732</td>
+          </tr>
+          <tr>
+              <td>23</td>
+              <td><img src="https://assets.coingecko.com/coins/images/14495/standard/Internet_Computer_logo.png?1696514180" alt="Internet Computer"></td>
+              <td>Internet Computer</td>
+              <td>ICP</td>
+              <td>$9.29</td>
+              <td>452,875,518</td>
+              <td>511 Million</td>
+              <td>$4,210,651,957</td>
+          </tr>
+          <tr>
+              <td>24</td>
+              <td><img src="https://assets.coingecko.com/coins/images/12882/standard/Secondary_Symbol.png?1696512670" alt="VeChain"></td>
+              <td>Injective</td>
+              <td>INJ</td>
+              <td>$42.84</td>
+              <td>84,255,556</td>
+              <td>100 Million</td>
+              <td>$3,608,030,149</td>
+          </tr>
+          <tr>
+              <td>25</td>
+              <td><img src="https://assets.coingecko.com/coins/images/8418/standard/leo-token.png?1696508607" alt="LEO Token"></td>
+              <td>LEO Token</td>
+              <td>LEO</td>
+              <td>$3.84</td>
+              <td>928,164,883</td>
+              <td>985 Million</td>
+              <td>$3,570,413,043</td>
+          </tr>
+          <tr>
+              <td>26</td>
+              <td><img src="https://assets.coingecko.com/coins/images/100/standard/Stellar_symbol_black_RGB.png?1696501482" alt="Stellar"></td>
+              <td>Stellar</td>
+              <td>XLM</td>
+              <td>$0.120944</td>
+              <td>28,194,464,678</td>
+              <td>50 Billion</td>
+              <td>$3,413,645,663</td>
+          </tr>
+          <tr>
+              <td>27</td>
+              <td><img src="https://assets.coingecko.com/coins/images/4463/standard/WeChat_Image_20220118095654.png?1696505053" alt="Monero"></td>
+              <td>OKB</td>
+              <td>OKB</td>
+              <td>$55.23</td>
+              <td>60,000,000</td>
+              <td>236 Million</td>
+              <td>$3,313,949,996</td>
+          </tr>
+          <tr>
+              <td>28</td>
+              <td><img src="https://assets.coingecko.com/coins/images/69/standard/monero_logo.png?1696501460" alt="Cosmos"></td>
+              <td>Monero</td>
+              <td>XMR</td>
+              <td>$173.21</td>
+              <td>18,147,820</td>
+              <td>∞</td>
+              <td>$3,143,706,167</td>
+          </tr>
+          <tr>
+              <td>29</td>
+              <td><img src="https://assets.coingecko.com/coins/images/1481/standard/cosmos_hub.png?1696502525" alt="Hedera Hashgraph"></td>
+              <td>Cosmos Hub</td>
+              <td>ATOM</td>
+              <td>$10.73</td>
+              <td>292,586,164</td>
+              <td>∞</td>
+              <td>$3,135,590,514</td>
+          </tr>
+          <tr>
+              <td>30</td>
+              <td><img src="https://assets.coingecko.com/coins/images/3688/standard/hbar.png?1696504364" alt="Immutable X"></td>
+              <td>Hedera</td>
+              <td>HBAR</td>
+              <td>$0.087079</td>
+              <td>33,596,061,152</td>
+              <td>50 Billion</td>
+              <td>$2,927,805,775</td>
+          </tr>
+          <tr>
+              <td>31</td>
+              <td><img src="https://assets.coingecko.com/coins/images/17233/standard/immutableX-symbol-BLK-RGB.png?1696516787" alt="Ethereum Classic"></td>
+              <td>Immutable</td>
+              <td>IMX</td>
+              <td>$2.24</td>
+              <td>1,288,194,242</td>
+              <td>2 Billion</td>
+              <td>$2,878,001,282</td>
+          </tr>
+          <tr>
+              <td>32</td>
+              <td><img src="https://assets.coingecko.com/coins/images/453/standard/ethereum-classic-logo.png?1696501717" alt="NEAR Protocol"></td>
+              <td>Ethereum Classic</td>
+              <td>ETC</td>
+              <td>$20.11</td>
+              <td>143,202,120</td>
+              <td>211 Million</td>
+              <td>$2,878,063,221</td>
+          </tr>
+          <tr>
+              <td>33</td>
+              <td><img src="https://assets.coingecko.com/coins/images/10365/standard/near.jpg?1696510367" alt="VeThor Token"></td>
+              <td>NEAR Protocol</td>
+              <td>NEAR</td>
+              <td>$2.80</td>
+              <td>1,005,003,473</td>
+              <td>1.17 Billion</td>
+              <td>$2,817,276,050</td>
+          </tr>
+          <tr>
+              <td>34</td>
+              <td><img src="https://assets.coingecko.com/coins/images/1167/standard/VET_Token_Icon.png?1696502256" alt="Crypto.com Coin"></td>
+              <td>VeChain</td>
+              <td>VET</td>
+              <td>$0.03531206</td>
+              <td>72,714,516,834</td>
+              <td>86 Billion</td>
+              <td>$2,567,969,969</td>
+          </tr>
+          <tr>
+              <td>35</td>
+              <td><img src="https://assets.coingecko.com/coins/images/7310/standard/cro_token_logo.png?1696507599" alt="Filecoin"></td>
+              <td>Cronos</td>
+              <td>CRO</td>
+              <td>$0.097005</td>
+              <td>26,433,580,952</td>
+              <td>30 Billion</td>
+              <td>$2,564,483,096</td>
+          </tr>
+          <tr>
+              <td>36</td>
+              <td><img src="https://assets.coingecko.com/coins/images/12817/standard/filecoin.png?1696512609" alt="Arweave"></td>
+              <td>Filecoin</td>
+              <td>FIL</td>
+              <td>$5.23</td>
+              <td>482,888,117</td>
+              <td>1.96 Billion</td>
+              <td>$2,524,575,259</td>
+          </tr>
+          <tr>
+              <td>37</td>
+              <td><img src="https://assets.coingecko.com/coins/images/26455/standard/aptos_round.png?1696525528" alt="TrueUSD"></td>
+              <td>Aptos</td>
+              <td>APT</td>
+              <td>$8.20</td>
+              <td>305,573,141</td>
+              <td>1.07 Billion</td>
+              <td>$2,505,990,726</td>
+          </tr>
+          <tr>
+              <td>38</td>
+              <td><img src="https://assets.coingecko.com/coins/images/3449/standard/tusd.png?1696504140" alt="Kaspa"></td>
+              <td>TrueUSD</td>
+              <td>TUSD</td>
+              <td>$0.998271</td>
+              <td>2,437,245,872</td>
+              <td>2.44 Billion</td>
+              <td>$2,433,082,325</td>
+          </tr>
+          <tr>
+              <td>39</td>
+              <td><img src="https://assets.coingecko.com/coins/images/25751/standard/kaspa-icon-exchanges.png?1696524837" alt="Stacks"></td>
+              <td>Kaspa</td>
+              <td>KAS</td>
+              <td>$0.107245</td>
+              <td>21,992,595,537</td>
+              <td>22 Billion</td>
+              <td>$2,358,503,256</td>
+          </tr>
+          <tr>
+              <td>40</td>
+              <td><img src="https://assets.coingecko.com/coins/images/2069/standard/Stacks_logo_full.png?1696503035" alt="Optimism"></td>
+              <td>Stacks</td>
+              <td>STX</td>
+              <td>$1.40</td>
+              <td>1,428,640,907</td>
+              <td>1.82 Billion</td>
+              <td>$2,006,999,353</td>
+          </tr>
+          <tr>
+              <td>41</td>
+              <td><img src="https://assets.coingecko.com/coins/images/25244/standard/Optimism.png?1696524385" alt="RioDeFi"></td>
+              <td>Optimism</td>
+              <td>OP</td>
+              <td>$2.18</td>
+              <td>911,294,948</td>
+              <td>4.29 Billion</td>
+              <td>$1,986,109,746</td>
+          </tr>
+          <tr>
+              <td>42</td>
+              <td><img src="https://assets.coingecko.com/coins/images/28452/standard/ARUsPeNQ_400x400.jpeg?1696527447" alt="Tia"></td>
+              <td>Bittensor</td>
+              <td>TAO</td>
+              <td>$326.40</td>
+              <td>5,879,054</td>
+              <td>5.88 Million</td>
+              <td>$1,918,935,465</td>
+          </tr>
+          <tr>
+              <td>43</td>
+              <td><img src="https://assets.coingecko.com/coins/images/31967/standard/tia.jpg?1696530772" alt="Lido DAO"></td>
+              <td>Celestia</td>
+              <td>TIA</td>
+              <td>$13.17</td>
+              <td>145,865,446</td>
+              <td>1 Billion</td>
+              <td>$1,889,839,930</td>
+          </tr>
+          <tr>
+              <td>44</td>
+              <td><img src="https://assets.coingecko.com/coins/images/13573/standard/Lido_DAO.png?1696513326" alt="First Digital"></td>
+              <td>Lido DAO</td>
+              <td>LDO</td>
+              <td>$2.11</td>
+              <td>889,572,136</td>
+              <td>1 Billion</td>
+              <td>$1,879,783,011</td>
+          </tr>
+          <tr>
+              <td>45</td>
+              <td><img src="https://assets.coingecko.com/coins/images/31079/standard/firstfigital.jpeg?1696529912" alt="Token"></td>
+              <td>First Digital USD</td>
+              <td>FDUSD</td>
+              <td>$1.00</td>
+              <td>1,800,241,367</td>
+              <td>1.8 Billion</td>
+              <td>$1,795,428,767</td>
+          </tr>
+          <tr>
+              <td>46</td>
+              <td><img src="https://assets.coingecko.com/coins/images/30980/standard/token-logo.png?1696529819" alt="Render Token"></td>
+              <td>Mantle</td>
+              <td>MNT</td>
+              <td>$0.570686</td>
+              <td>3,130,673,946</td>
+              <td>6.22 Billion</td>
+              <td>$1,783,512,366</td>
+          </tr>
+          <tr>
+              <td>47</td>
+              <td><img src="https://assets.coingecko.com/coins/images/11636/standard/rndr.png?1696511529" alt="5ZOOM"></td>
+              <td>Render</td>
+              <td>RNDR</td>
+              <td>$4.35</td>
+              <td>374,366,304</td>
+              <td>531 Million</td>
+              <td>$1,627,630,779</td>
+          </tr>
+          <tr>
+              <td>48</td>
+              <td><img src="https://assets.coingecko.com/coins/images/3370/standard/5ZOu7brX_400x400.jpg?1696504070" alt="Thorchain"></td>
+              <td>Quant</td>
+              <td>QNT</td>
+              <td>$109.94</td>
+              <td>14,544,176</td>
+              <td>14.6 Million</td>
+              <td>$1,597,139,454</td>
+          </tr>
+          <tr>
+              <td>49</td>
+              <td><img src="https://assets.coingecko.com/coins/images/6595/standard/Rune200x200.png?1696506946" alt="Decentraland"></td>
+              <td>THORChain</td>
+              <td>RUNE</td>
+              <td>$5.31</td>
+              <td>300,700,561</td>
+              <td>500 Million</td>
+              <td>$1,596,736,279</td>
+          </tr>
+          <tr>
+              <td>50</td>
+              <td><img src="https://assets.coingecko.com/coins/images/4380/standard/download.png?1696504978" alt="Kava"></td>
+              <td>Algorand</td>
+              <td>ALGO</td>
+              <td>$0.199519</td>
+              <td>8,006,609,183</td>
+              <td>8.01 Billion</td>
+              <td>$1,595,488,610</td>
+          </tr>
+        </table>
+      </div>
+
+</div>
+        
+</body>
+<!-- Just an image -->
+
+   <!-- Footer -->
+<footer style="background-color: black; color: azure; padding-top: 20px;">
+  
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color: aquamarine; font-size: 25px;">
+              Bharat Stock Market
+          </h6>
+          <p>
+            <span style="font-size: 20px; color: antiquewhite;">  Bharat Stock Market</span>  is an open source website that bundles Scientific financial planning, Handpicked courses and business-grade stocks & Crypto currency analytics into one convenient site.
+          </p>
+      
+          <section class="mb-4" style="color: aliceblue;">
+              <!-- Facebook -->
+              <a
+                data-mdb-ripple-init
+                class="btn btn-link btn-floating btn-lg text-body m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+        
+              <!-- Twitter -->
+              <a
+                data-mdb-ripple-init
+                class="btn btn-link btn-floating btn-lg text-body m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-twitter"></i
+              ></a>
+        
+        
+              <!-- Instagram -->
+              <a
+                data-mdb-ripple-init
+                class="btn btn-link btn-floating btn-lg text-body m-1"
+                href="https://www.instagram.com/bharath_stock_market?igshid=OGQ5ZDc2ODk2ZA=="
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-instagram"></i
+              ></a>
+        
+              <!-- Linkedin -->
+              <a
+                data-mdb-ripple-init
+                class="btn btn-link btn-floating btn-lg text-body m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </section>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color: aquamarine; font-size: 25px;">
+            Crypto 
+          </h6>
+          <p>
+            <a href="Top 50 Cryptos.html" class="text-reset">Top 50</a>
+          </p>
+          <p>
+            <a href="TOP 10 BTC Holders.html" class="text-reset">Top 10 BTC Holders  </a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">All Time Gainers</a>
+          </p>
+          <p>
+            <a href="Crypto Share Pattern.html" class="text-reset">Share Pattern</a>
+          </p>
+          <p>
+            <a href="TOP 100 Billionaires.html" class="text-reset">Top 100 Billionaires</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color: aquamarine; font-size: 25px;">
+             Indian Stocks
+          </h6>
+          <p>
+            <a href="3yrshistoricalgainers.html" class="text-reset">3 Yrs Historical Gainers</a>
+          </p>
+          <p>
+            <a href="nifty50.html" class="text-reset">Nifty 50</a>
+          </p>
+          <p>
+            <a href="Top 100 Comapnies India.html" class="text-reset">Top 100</a>
+          </p>
+          <p>
+            <a href="niftybank.html" class="text-reset">Nifty Bank</a>
+          </p>
+          <p>
+              <a href="sensex.html" class="text-reset">Sensex</a>
+            </p>
+            <hr>
+            <p>
+              <a href="S & P 500.html" class="text-reset">S & P 500 Companies</a>
+            </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color: aquamarine; font-size: 25px;">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Ongole ,AP </p>
+          <p>
+              <p><i class="fa fa-envelope"></i> &nbsp; &nbsp;<a href="mailto:ganeshnaidurama@gmail.com">Bharat Stock Market</a></p>
+          </p>
+          <p><i class="fas fa-phone me-3"></i>9014899766</p>
+       
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+<hr>
+<!-- Copyright -->
+<div class="container py-4">
+<div class="row text-center">
+  <div class="col-md-6">
+    <p class="mb-0 text-muted">&copy; 2024 Bharat Stock Market. All rights reserved.</p>
+  </div>
+  <div class="col-md-6">
+    <p class="mb-0"><a href="../index.html" class="text-muted">Powered by AVANTHY Technology</a></p>
+  </div>
+</div>
+</div>
+<!-- Copyright -->
+
+
+
+
+
+</footer>
+<!-- Footer -->
+</body>
+</html>
